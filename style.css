@@ -1,0 +1,51 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf9f6;
+  color: #111;
+}
+.app {
+  text-align: center;
+  padding: 30px 20px;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 10px;
+  background: url('assets/logo.jpg') no-repeat center/cover;
+  border-radius: 50%;
+  opacity: 0;
+}
+h1 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+  color: #800000;
+}
+.tagline {
+  color: #a55;
+  margin-bottom: 20px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.btn {
+  background: #800000;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #a00000;
+}
+.footer {
+  margin-top: 40px;
+  font-size: 0.85em;
+  color: #666;
+}
