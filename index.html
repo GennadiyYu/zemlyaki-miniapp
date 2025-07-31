@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,65 +9,27 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo"></div>
+    <img src="assets/logo.jpg" alt="Логотип ЗемляКи" class="logo" />
     <div>
-      <h1>ЗемляКи. МДТ</h1>
-      <p class="tagline">Путь Домой</p>
+      <h1>ЗемляКи</h1>
+      <p>Путь Домой</p>
     </div>
   </header>
-  <nav class="main-nav">
-    <a href="#chats" class="btn">Чаты и каналы</a>
-    <a href="#members" class="btn">Участники</a>
-    <a href="#events" class="btn">Мероприятия</a>
-  </nav>
+
   <main>
-    <section id="chats" class="section">
-      <h2>Чаты и каналы</h2>
-      <div class="chat-list">
-        <a href="https://t.me/MDT_Mordovia" class="chat-card" target="_blank">
-          <img src="assets/icon_channel.png" class="icon"/><span>Основной канал</span>
-        </a>
-        <a href="https://t.me/c/1973973455/1" class="chat-card" target="_blank">
-          <img src="assets/icon_chat.png" class="icon"/><span>Чат ЗемляКИ</span>
-        </a>
-        <a href="https://t.me/c/1973973455/7918" class="chat-card" target="_blank">
-          <img src="assets/icon_calendar.png" class="icon"/><span>Календарь</span>
-        </a>
-        <a href="https://t.me/c/1973973455/7917" class="chat-card" target="_blank">
-          <img src="assets/icon_request.png" class="icon"/><span>Запросы</span>
-        </a>
-      </div>
-    </section>
-    <section id="members" class="section">
-      <h2>Участники</h2>
-      <form id="addMemberForm" class="member-form">
-        <input type="text" placeholder="Имя и Фамилия" name="name" required />
-        <input type="text" placeholder="Интересы" name="interests" />
-        <input type="url" placeholder="Ссылка на Telegram" name="tg" required />
-        <input type="url" placeholder="Ссылка на фото" name="photo" />
-        <button type="submit">Добавить участника</button>
-      </form>
-      <div class="members-list" id="membersList">
-        <!-- Карточки участников -->
-      </div>
-    </section>
-    <section id="events" class="section">
-      <h2>Мероприятия</h2>
-      <div class="events-block">
-        <div class="city-block">
-          <h3>Москва</h3>
-          <div class="event-card">Пример: Встреча ЗемляКи в Москве</div>
-        </div>
-        <div class="city-block">
-          <h3>Саранск</h3>
-          <div class="event-card">Пример: Бизнес-завтрак в Саранске</div>
-        </div>
-      </div>
+    <section class="grid">
+      <div class="card chats"><h2>Чаты и Каналы</h2></div>
+      <div class="card users"><h2>Участники</h2></div>
+      <div class="card events"><h2>Мероприятия</h2></div>
+      <div class="card knowledge"><h2>База знаний</h2></div>
+      <div class="card masters"><h2>Мастера</h2></div>
+      <div class="card products"><h2>Витрина продуктов</h2></div>
+      <div class="card requests"><h2>Запросы</h2></div>
     </section>
   </main>
+
   <footer class="footer">
-    Сделано с любовью. ЗемляКи. 2025
+    <p>© ЗемляКи, 2025</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
