@@ -1,54 +1,89 @@
 
 body {
-    background-color: #0b0b0b;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #1c1c1c, #000000);
+  color: #fff;
 }
-main {
-    padding: 20px;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: #330000;
 }
-h1 {
-    font-size: 24px;
-    color: white;
-    margin-bottom: 20px;
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
-.channel-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 16px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 16px;
 }
-.channel-card {
-    background: linear-gradient(135deg, #2d2d2d, #1c1c1c);
-    border-radius: 16px;
-    padding: 12px;
-    text-align: center;
-    transition: 0.3s;
-    border: 1px solid #2a2a2a;
+.card {
+  background-color: #2a2a2a;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #444;
 }
-.channel-card:hover {
-    transform: translateY(-4px);
+.card:hover {
+  background-color: #3a0f0f;
 }
-.channel-card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 10px;
+.back-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }
-.channel-card h2 {
-    font-size: 16px;
-    margin: 0;
-    color: white;
+.chat-list, .opora-list {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-.channel-card p {
-    font-size: 13px;
-    color: #ccc;
-    margin-top: 4px;
+.chat-card, .opora-card {
+  display: flex;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 12px;
+  gap: 12px;
+  align-items: center;
 }
-.channel-card a {
-    text-decoration: none;
-    color: #e74c3c;
-    font-weight: bold;
+.chat-card img, .opora-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+.chat-card a {
+  margin-top: 4px;
+  background-color: #550000;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.product-page {
+  padding: 16px;
+}
+.product-form input, .product-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+.product-form button {
+  background-color: #550000;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
 }
