@@ -9,6 +9,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  gap: 12px;
   padding: 16px;
   background-color: #330000;
 }
@@ -18,6 +19,14 @@ body {
   height: 48px;
   border-radius: 50%;
   margin-right: 12px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .grid {
@@ -34,6 +43,8 @@ body {
   border-radius: 10px;
   text-align: center;
   transition: 0.3s;
+  color: white;
+  text-decoration: none;
 }
 
 .card:hover {
@@ -46,4 +57,48 @@ body {
   text-align: center;
   font-size: 0.9em;
   background-color: #111;
+}
+
+.chat-list {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chat-card {
+  display: flex;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 12px;
+  gap: 12px;
+  align-items: center;
+}
+
+.chat-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.chat-card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chat-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.chat-card a {
+  display: inline-block;
+  margin-top: 4px;
+  background-color: #550000;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
 }
