@@ -1,89 +1,33 @@
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background: linear-gradient(to bottom, #1c1c1c, #000000);
-  color: #fff;
+    background: #0b0b0b;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px;
-  background-color: #330000;
+main {
+    padding: 20px;
 }
-.logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+.opora-card {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
-  padding: 16px;
+.opora-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
 }
-.card {
-  background-color: #2a2a2a;
-  padding: 16px;
-  border-radius: 12px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  border: 1px solid #444;
+.opora-card h2 {
+    margin: 0 0 8px;
 }
-.card:hover {
-  background-color: #3a0f0f;
-}
-.back-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-}
-.chat-list, .opora-list {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.chat-card, .opora-card {
-  display: flex;
-  background-color: #2a2a2a;
-  border-radius: 10px;
-  padding: 12px;
-  gap: 12px;
-  align-items: center;
-}
-.chat-card img, .opora-card img {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-}
-.chat-card a {
-  margin-top: 4px;
-  background-color: #550000;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
-  text-decoration: none;
-}
-.product-page {
-  padding: 16px;
-}
-.product-form input, .product-form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 8px;
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-}
-.product-form button {
-  background-color: #550000;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
+.opora-card a {
+    color: #e34264;
+    text-decoration: none;
 }
